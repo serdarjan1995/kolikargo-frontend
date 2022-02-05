@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  kolaykargo-frontend:
+    container_name: kolaykargo-frontend
+    image: kolaykargo-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"

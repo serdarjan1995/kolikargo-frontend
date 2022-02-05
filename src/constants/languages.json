@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Türkçe",
+    "text": "Turkey",
+    "code": "tr"
+  },
+  {
+    "name": "Turkmen",
+    "text": "Türkmenler",
+    "code": "tmen"
+  },
+  {
+    "name": "Pусский",
+    "text": "Pусский",
+    "code": "rus"
+  },
+  {
+    "name": "English",
+    "text": "English",
+    "code": "en"
+  }
+]

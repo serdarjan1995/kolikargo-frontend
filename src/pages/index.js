@@ -1,0 +1,11 @@
+export { default as Home } from "./home";
+export { default as AllCompanies } from "./all-companies";
+export { default as Company } from "./company";
+export { default as CallCourier } from "./call-courier";
+export { default as Confirmation } from "./confirmation";
+export { default as Profile } from "./profile";
+export { default as NotFound } from "./not-found";
+export { default as TrackCargo } from "./track-cargo";
+export { default as FAQ } from "./faq";
+export { default as About } from "./about";
+export { default as Blog } from "./blog";
