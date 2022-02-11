@@ -6,7 +6,7 @@ import {
   BoxesIcon,
   PinIcon,
   SettingsIcon,
-  SettingsIcon2,
+  //SettingsIcon2,
 } from "../../components/icons";
 import { useCurrentUser } from "../../hooks";
 import lnMap from "../../languages/language-maps/shared-lang-map";

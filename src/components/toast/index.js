@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   Container,
   Content,
@@ -6,7 +6,6 @@ import {
   Title,
   Button,
   IconContainer,
-  InnerIconContainer,
 } from "./styles/toast";
 import { css } from "styled-components/macro";
 import { Portal } from "../../helpers";
@@ -20,7 +19,6 @@ import {
   ToastSuccessIconSmall,
   ToastWarnIconLarge,
   ToastWarnIconSmall,
-  WarnIcon,
 } from "../icons";
 import { slideInTopToBottom } from "../../styles/animations";
 import { useToast } from "../../hooks";

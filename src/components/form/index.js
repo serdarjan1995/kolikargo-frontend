@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ref } from "yup";
-import { LoginModalContainer } from "../../containers";
+// import { ref } from "yup";
+// import { LoginModalContainer } from "../../containers";
 import {
   Container,
   Title,
@@ -92,7 +92,7 @@ Form.InputField = function InputField(props) {
   } = props;
 
   const [variant, setVariant] = useState(variantProp || "");
-  const { active, filled, disabled, warn } = inputFieldVariants;
+  const { active, filled, /*disabled, warn*/ } = inputFieldVariants;
   const inputRef = useRef();
 
   useEffect(() => {

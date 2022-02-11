@@ -4,12 +4,12 @@ import lnMap from "../../languages/language-maps/shared-lang-map";
 import {
   BoxesIcon,
   FlagIcon,
-  HomeIcon,
+  //HomeIcon,
   ShareIcon,
   StarIconStroked,
 } from "../../components/icons";
 import { useTranslation } from "react-i18next";
-import CourierIMG from "../../assets/mock/courier.jpg";
+//import CourierIMG from "../../assets/mock/courier.jpg";
 import "styled-components/macro";
 import { fonts, screens } from "../../styles/variables";
 import * as ROUTES from "../../constants/routes";

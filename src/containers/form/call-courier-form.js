@@ -43,7 +43,7 @@ function CallCourierFormContainer() {
   const {
     handlers,
     customDatePickerInput,
-    validationSchema,
+    //validationSchema,
     selectedDay,
     setSelectedDay,
   } = useCallCourierFormLogic();

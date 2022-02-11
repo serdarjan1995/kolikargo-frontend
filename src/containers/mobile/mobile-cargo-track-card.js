@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { /*useMemo*/ } from "react";
 import lnMap from "../../languages/language-maps/shared-lang-map";
 import { Flex, GridTable, MobileCargoTrackCard } from "../../components";
 import { useTranslation } from "react-i18next";
@@ -35,10 +35,10 @@ function MobileCargoTrackCardContainer({ cargos }) {
     [t]
   ); */
 
-  const cargoStatus = {
-    1: "delivered",
-    2: "on_way",
-  };
+  // const cargoStatus = {
+  //   1: "delivered",
+  //   2: "on_way",
+  // };
 
   return (
     <>

@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import "styled-components/macro";
 import { useTranslation } from "react-i18next";
 import lnMap from "../languages/language-maps/shared-lang-map";
-import { FAQ, Flex, MainLayout } from "../components";
+import { FAQ, Flex } from "../components";
 import {
   CircleAndSquareIcon,
   HouseIcon2,
@@ -10,7 +10,7 @@ import {
 } from "../components/icons";
 import { DropdownContainer } from ".";
 import { useTab } from "../hooks";
-import { screens, sizes } from "../styles/variables";
+import { screens } from "../styles/variables";
 
 const items = [
   {

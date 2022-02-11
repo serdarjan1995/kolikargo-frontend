@@ -1,20 +1,17 @@
-import { Formik } from "formik";
-import React, { useMemo, useState } from "react";
+import {Formik} from "formik";
+import React, {useMemo, useState} from "react";
 import lnMap from "../../languages/language-maps/shared-lang-map";
-import { Card, Dropdown, Flex, Form } from "../../components";
-import {
-  circledIconStyle,
-  ProfileSectionTitleStyle,
-} from "../../styles/mixins";
-import { screens } from "../../styles/variables";
-import { useTranslation } from "react-i18next";
+import {Card, Dropdown, Flex, Form} from "../../components";
+import {circledIconStyle, ProfileSectionTitleStyle,} from "../../styles/mixins";
+import {screens} from "../../styles/variables";
+import {useTranslation} from "react-i18next";
 import "styled-components/macro";
-import { ButtonSmall } from "../../components/button";
+import {ButtonSmall} from "../../components/button";
 import OverlayDropdownContainer from "../utils/overlay-dropdown";
-import { ChevronRightIcon } from "../../components/icons";
+import {ChevronRightIcon} from "../../components/icons";
 import GridTableContainer from "../grid-table";
 import MobileCargoTrackCardContainer from "../mobile/mobile-cargo-track-card";
-import { useMyCargosLogic } from "../../hooks";
+import {useMyCargosLogic} from "../../hooks";
 
 const cargoTrackIconStyle = `
 position: absolute;
@@ -33,7 +30,7 @@ function MyCargosContainer() {
   };
 
   const dropdownItems = useMemo(() => {
-    const items = [
+    return [
       {
         name: lnMap.profile_all,
         handler: handleTabClick(lnMap.profile_all),
@@ -42,9 +39,8 @@ function MyCargosContainer() {
         name: lnMap.profile_on_the_way,
         handler: lnMap.profile_on_the_way,
       },
-      { name: lnMap.profile_completed, handler: lnMap.profile_completed },
+      {name: lnMap.profile_completed, handler: lnMap.profile_completed},
     ];
-    return items;
   }, []);
 
   return (

@@ -10,7 +10,7 @@ import { PlusIcon } from "../../components/icons";
 import "styled-components/macro";
 import { Flex } from "../../components";
 import { GoBackButton } from "../../components/button";
-import { useAddressesLogic } from "../../hooks";
+//import { useAddressesLogic } from "../../hooks";
 
 const addresses = [
   {
@@ -25,7 +25,7 @@ const addresses = [
 
 function AddressesContainer() {
   const { t } = useTranslation();
-  const {} = useAddressesLogic();
+  //const {} = useAddressesLogic();
 
   return (
     <>

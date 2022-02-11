@@ -1,12 +1,12 @@
 import styled from "styled-components/macro";
 import { fonts, indexes, screens } from "../../../styles/variables";
 
-const getIconContainerColorByVariant = {
-  success: "#E3F9DD",
-  error: "#FFE0E0",
-  warn: "#FFF4D6",
-  info: "#ECF4FF",
-};
+// const getIconContainerColorByVariant = {
+//   success: "#E3F9DD",
+//   error: "#FFE0E0",
+//   warn: "#FFF4D6",
+//   info: "#ECF4FF",
+// };
 
 export const Container = styled.div`
   display: flex;

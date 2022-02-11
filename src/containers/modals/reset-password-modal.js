@@ -16,7 +16,7 @@ const validationSchema = Yup.object({
 
 function ResetPasswordModalContainer(props) {
   const { t } = useTranslation();
-  const { resetModal, openSignUpModal, openSMSVerificationModal } = props;
+  const { resetModal, openSignUpModal, /*openSMSVerificationModal*/ } = props;
 
   return (
     <Backdrop onClick={resetModal}>

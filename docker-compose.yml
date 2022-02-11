@@ -1,8 +1,8 @@
 version: "3.9"
 services:
-  kolaykargo-frontend:
-    container_name: kolaykargo-frontend
-    image: kolaykargo-frontend
+  kolikargo-frontend:
+    container_name: kolikargo-frontend
+    image: kolikargo-frontend
     build:
       context: .
       dockerfile: Dockerfile

@@ -1,5 +1,4 @@
 import React from "react";
-import { SmallDashedLine } from "../../../icons";
 import {
   Container,
   List,

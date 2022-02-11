@@ -11,11 +11,11 @@ import {
 import "styled-components/macro";
 import * as ROUTES from "../constants/routes";
 import Moment from "react-moment";
-import { useHistory } from "react-router";
+//import { useHistory } from "react-router";
 
 function GridTableContainer({ cargos }) {
   const { t } = useTranslation();
-  const history = useHistory();
+  //const history = useHistory();
 
   /*  const tableItems = useMemo(
     () => [

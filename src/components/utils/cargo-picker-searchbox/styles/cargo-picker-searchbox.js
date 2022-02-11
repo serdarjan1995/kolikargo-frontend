@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { fonts, indexes, screens, transitions } from "../../../../styles/variables";
+import { fonts, indexes, transitions } from "../../../../styles/variables";
 
 export const Container = styled.div``;
 

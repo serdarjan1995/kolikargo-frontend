@@ -9,7 +9,7 @@ import CourierIMG from "../assets/mock/courier-real.jpg";
 function CardContainer({ cardData }) {
   const { t } = useTranslation();
 
-  const { id, title, images, rating, records, attributes } = cardData;
+  const { id, title, rating, records, attributes } = cardData;
   const [, , minimumWeight, maximumDeliveryDay, minimumDeliveryDay] =
     attributes;
 
