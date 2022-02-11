@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, /*useEffect,*/ useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import lnMap from "../../languages/language-maps/shared-lang-map";
 import * as Yup from "yup";
@@ -27,7 +27,7 @@ function useCallCourierFormLogic() {
     };
 
 
-    const [first_name, last_name = ""] = recipient_name.split(" ");
+    //const [first_name, last_name = ""] = recipient_name.split(" ");
 
     const shipping_address = {
       country: "https://kolaykargo.herokuapp.com/api/countries/TR/",

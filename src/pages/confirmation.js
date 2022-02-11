@@ -1,7 +1,7 @@
 import React from "react";
 import lnMap from "../languages/language-maps/shared-lang-map";
-import { Flex, Info, MainLayout, TrackNumberDisplay } from "../components";
-import { CircledCheck, CopyIcon, LeftArrowIcon } from "../components/icons";
+import { Flex, Info, MainLayout, /*TrackNumberDisplay*/ } from "../components";
+import { CircledCheck, /*CopyIcon,*/ LeftArrowIcon } from "../components/icons";
 import { useTranslation } from "react-i18next";
 import "styled-components/macro";
 import { ButtonLarge } from "../components/button";

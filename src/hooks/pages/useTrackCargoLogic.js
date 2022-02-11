@@ -4,7 +4,7 @@ import { ENDPOINTS } from "../../constants/endpoints";
 
 function useTrackCargoLogic() {
   const { order } = useParams();
-  const { data } = useGetData(`${ENDPOINTS.GET.ORDERS}${order}/`,true);
+  /*const { data } = */useGetData(`${ENDPOINTS.GET.ORDERS}${order}/`,true);
   return {};
 }
 

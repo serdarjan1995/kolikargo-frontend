@@ -29,6 +29,7 @@ function useHomeLogic() {
     if (redirect) {
       openLoginModal();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [redirect]);
 
   return { tabs, currentSortingItem, setCurrentSortingItem, data };

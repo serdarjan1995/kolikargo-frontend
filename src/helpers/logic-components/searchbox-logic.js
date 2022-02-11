@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useGetData, useWindowKey } from "../../hooks";
+import React, { /*useEffect,*/ useRef, useState } from "react";
+import { /*useGetData,*/ useWindowKey } from "../../hooks";
 import { CargoPicker } from "../../components";
 import { CircledCrossIcon } from "../../components/icons";
 
@@ -14,10 +14,10 @@ import { CircledCrossIcon } from "../../components/icons";
 
 function SearchboxLogic(props) {
   const {
-    url,
+    //url,
     name,
     list,
-    setList,
+    //setList,
     Container,
     List,
     Item,

@@ -49,12 +49,14 @@ function useGetData(defaultUrl, auto = false, options = {}) {
           setData((prevData) => ({ ...prevData, isLoading: false, error }));
         });
     },
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     [defaultUrl, addToastItem, t]
   );
 
   useEffect(() => {
     if (auto) getData();
     return () => request?.cancel();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [auto]);
 
   return { getData, data };

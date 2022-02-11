@@ -12,7 +12,6 @@ import {
   PinIcon,
   TruckIcon,
 } from "../../../components/icons";
-import styled from "styled-components";
 import { screens } from "../../../styles/variables";
 
 const data = {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useCurrentUser, useLocalStorage, useToast } from ".";
+import { /*useCurrentUser,*/ useLocalStorage, useToast } from ".";
 import lnMap from "../languages/language-maps/shared-lang-map";
 
 const defaultState = {
@@ -52,6 +52,7 @@ function usePost(options = {}) {
           }
         });
     },
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     [resource, addToastItem, t, specialError, localToken]
   );
 

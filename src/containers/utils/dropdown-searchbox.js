@@ -22,7 +22,7 @@ function DropdownSearchboxContainer(props) {
     ...rest
   } = props;
   const [showDropdown, setShowDropdown] = useState(false);
-  const [value, setValue] = useState("");
+  //const [value, setValue] = useState("");
   const [displayedValue, setDisplayedValue] = useState("");
   const dropDownRef = useRef();
 
@@ -50,12 +50,12 @@ function DropdownSearchboxContainer(props) {
 
   const handleChange = (e) => {
     setDisplayedValue(e.target.value);
-    setValue(e.target.value);
+    //setValue(e.target.value);
     setFieldValue(name, e.target.value);
   };
 
   const handleItemClick = (key, value) => {
-    setValue(value);
+    //setValue(value);
     setDisplayedValue(key)
     setFieldValue(name, value);
   };

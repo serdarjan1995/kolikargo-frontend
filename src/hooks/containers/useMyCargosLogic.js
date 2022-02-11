@@ -3,7 +3,7 @@ import { useHistory, useLocation } from "react-router";
 import { useEffect } from "react/cjs/react.development";
 import { useGetData } from "..";
 import { ENDPOINTS } from "../../constants/endpoints";
-import * as ROUTES from "../../constants/routes";
+//import * as ROUTES from "../../constants/routes";
 
 function useMyCargosLogic() {
   const history = useHistory();
@@ -30,7 +30,8 @@ function useMyCargosLogic() {
         }
       ).then((data) => setDisplayedCargos(data));
     }
-  }, [order]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [order, getData]);
 
   const handleSubmit = (values) => {
     const { track_no: order } = values;

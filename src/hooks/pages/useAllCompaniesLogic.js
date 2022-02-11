@@ -29,12 +29,14 @@ function useAllCompaniesLogic() {
       );
     }
     if (!query) getData(ENDPOINTS.GET.SERVICES);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [from, where]);
 
   useEffect(() => {
     if (!where && !from && query) {
       return getData(`${ENDPOINTS.GET.SERVICES}?q=${query}`);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
   return { data, tabs };
 }

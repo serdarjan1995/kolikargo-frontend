@@ -19,7 +19,7 @@ function Company() {
     date_created,
     reviews,
     rating,
-    images = [],
+    //images = [],
   } = data?.hits?.data || {};
   const [, , minimumWeight, maximumDeliveryDay, minimumDeliveryDay] =
     attributes || [];

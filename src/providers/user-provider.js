@@ -3,7 +3,7 @@ import { UserContext } from "../context";
 import { useLocalStorage } from "../hooks";
 
 function UserProvider({ children, ...rest }) {
-  const [token = null] = useLocalStorage("token", "");
+  /*const [token = null] = */useLocalStorage("token", "");
   const [currentUser, setCurrentUser] = useState({});
   const userState = { currentUser, setCurrentUser };
   return (

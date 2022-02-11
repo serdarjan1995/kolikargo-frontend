@@ -10,7 +10,7 @@ function useHeaderLogic() {
   const history = useHistory();
   const [showAccountDropdownMenu, setShowAccountDropdownMenu] = useState(false);
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
-  const { currentUser, login } = useCurrentUser();
+  const { currentUser, } = useCurrentUser();
   const { openLoginModal, openCargoTrackModal } = useModal();
   const [storedValue, setStoredValue] = useLocalStorage("lang", "en");
   const { t, i18n } = useTranslation();

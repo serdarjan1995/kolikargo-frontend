@@ -1,10 +1,10 @@
 import React from "react";
 import "styled-components/macro";
-import { css } from "styled-components";
+//import { css } from "styled-components";
 
 function ResponsiveRender(props) {
-  const { minWidth, reverse, children, display = "block" } = props;
-  return <>{children}</>
+  //const { minWidth, reverse, children, display = "block" } = props;
+  return <>{props.children}</>
   // return React.cloneElement(children, {
   //   css: css`
   //     display: ${reverse ? display : "none"};
