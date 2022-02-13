@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useHistory, useLocation } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import { useEffect } from "react/cjs/react.development";
 import { useGetData } from "..";
 import { ENDPOINTS } from "../../constants/endpoints";
 //import * as ROUTES from "../../constants/routes";
 
 function useMyCargosLogic() {
-  const history = useHistory();
+  const history = useNavigate();
   const location = useLocation();
   const { search } = useLocation();
   const { data, getData } = useGetData(ENDPOINTS.GET.ORDERS, true, {

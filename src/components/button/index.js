@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 import { LeftArrowThin } from "../icons";
 import {
   IconButton as IB,
@@ -25,7 +25,7 @@ function IconButton({ children, ...rest }) {
 }
 
 function GoBackButton({ children, ...rest }) {
-  const history = useHistory();
+  const history = useNavigate();
   const handleClick = () => {
     history.goBack();
   };

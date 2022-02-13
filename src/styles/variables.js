@@ -14,6 +14,8 @@ export const colors = {
   gray8: "#777",
   gray9: "#F4F5F6",
   green: "#0AC05E",
+  greenButton: "#00A857",
+  greenButtonHover: "#037e42",
   greenLight: "#E1FFEF",
   red: "#FF5119",
   orange: "#FFAA00",

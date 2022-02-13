@@ -4,7 +4,7 @@ import "styled-components/macro";
 import { Hero, Flex, Section } from "../components";
 import { screens, sizes } from "../styles/variables";
 import lnMap from "../languages/language-maps/home-lang-map";
-import WarehouseSVG from "../assets/home/img/warehouse.svg";
+import WarehouseSVG from "../assets/home/img/warehouse-green-new.svg";
 import CargoPickerContainer from "./utils/cargo-picker";
 import * as ROUTES from "../constants/routes"
 

@@ -203,6 +203,7 @@ const Settings = {
 const Header = {
   header_search: "header_search",
   header_btn: "header_btn",
+  header_login_btn: "header_login_btn",
   current_language: "current_language",
 };
 

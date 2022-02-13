@@ -1,4 +1,4 @@
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { createBreadcrumb } from "../helpers";
 import * as ROUTES from "../constants/routes";
 import { useTranslation } from "react-i18next";

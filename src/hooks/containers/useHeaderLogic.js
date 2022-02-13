@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 import { useCurrentUser, useLocalStorage } from "../../hooks";
 import useModal from "../useModal";
 import * as ROUTES from "../../constants/routes";
 
 function useHeaderLogic() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const history = useHistory();
+  const history = useNavigate();
   const [showAccountDropdownMenu, setShowAccountDropdownMenu] = useState(false);
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
   const { currentUser, } = useCurrentUser();

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 import { useLanguage } from "..";
 import * as ROUTES from "../../constants/routes";
 
 function useCargoPickerLogic() {
-  const history = useHistory();
+  const history = useNavigate();
   const { fromCities, whereCities } = useLanguage();
   const [fromList, setFromList] = useState(fromCities);
   const [whereList, setWhereList] = useState(whereCities);

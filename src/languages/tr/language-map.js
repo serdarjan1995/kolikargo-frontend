@@ -80,6 +80,7 @@ const ProductCard = {
 export const Header = {
   header_search: "Ara",
   header_btn: "Kargo takip",
+  header_login_btn: "Giriş",
   current_language: "Türkçe",
 };
 

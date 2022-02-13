@@ -9,11 +9,11 @@ import {
   SettingsContainer,
 } from "../containers";
 import { screens } from "../styles/variables";
-import { Route, useRouteMatch } from "react-router";
+import { Route, useMatch } from "react-router";
 import * as ROUTES from "../constants/routes";
 
 function Profile() {
-  const { path } = useRouteMatch();
+  const { path } = useMatch();
 
   return (
     <div

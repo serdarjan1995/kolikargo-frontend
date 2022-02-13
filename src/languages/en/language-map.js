@@ -77,6 +77,7 @@ const ProductCard = {
 export const Header = {
   header_search: "Search",
   header_btn: "Track cargo",
+  header_login_btn: "Login",
   current_language: "English",
 };
 

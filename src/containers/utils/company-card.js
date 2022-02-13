@@ -13,13 +13,13 @@ import { useTranslation } from "react-i18next";
 import "styled-components/macro";
 import { fonts, screens } from "../../styles/variables";
 import * as ROUTES from "../../constants/routes";
-import { useRouteMatch } from "react-router";
+import { useMatch } from "react-router";
 
 function CompanyCardContainer(props) {
   const { t } = useTranslation();
   const { companyCardData } = props;
   const { title, image, reviews,rating } = companyCardData;
-  const { url } = useRouteMatch();
+  const { url } = useMatch();
 
   return (
     <CompanyCard>

@@ -1,7 +1,6 @@
 export { default as useWindowKey } from "./useWindowKey";
 export { default as useTab } from "./useTab";
 export { default as useBreadcrumb } from "./useBreadcrumb";
-export { default as useCreateBreadcrumb } from "./useCreateBreadcrumb";
 export { default as useRouteMap } from "./useRouteMap";
 export { default as useWindowEvent } from "./useWindowEvent";
 export { default as useGetData } from "./useGetData";

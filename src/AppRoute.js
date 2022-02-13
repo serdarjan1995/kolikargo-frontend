@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Route, Switch } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import { FooterContainer, HeaderContainer, LoaderContainer, ModalContainer } from "./containers";
 import * as ROUTES from "./constants/routes";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
@@ -23,50 +23,25 @@ function AppRoute() {
       <HeaderContainer />
       <ScrollToTopOnRouteChange>
         <Suspense fallback={<LoaderContainer />}>
-          <Switch>
-            <Route path={ROUTES.HOME} exact>
-              <Home />
-            </Route>
-            <Route path={ROUTES.ALL_COMPANIES}>
-              <AllCompanies />
-            </Route>
-            <ProtectedRoute
-              path={`${ROUTES.COMPANY}/:company${ROUTES.CALL_COURIER}`}
-            >
-              <CallCourier />
-            </ProtectedRoute>
-            <Route path={`${ROUTES.COMPANY}/:company`}>
-              <Company />
-            </Route>
-            <ProtectedRoute path={ROUTES.CONFIRMATION}>
-              <Confirmation />
-            </ProtectedRoute>
-            <ProtectedRoute path={ROUTES.PROFILE}>
-              <Profile />
-            </ProtectedRoute>
-            <ProtectedRoute path={`${ROUTES.TRACK_CARGO}/:order`}>
-              <TrackCargo />
-            </ProtectedRoute>
-            <Route path={ROUTES.FAQ}>
-              <FAQ />
-            </Route>
-            <Route path={ROUTES.ABOUT}>
-              <About />
-            </Route>
-            <Route path={`${ROUTES.BLOG}/:blog_name`}>
-              <Blog />
-            </Route>
-            <IsUserRedirect
-              loggedInPath={ROUTES.HOME}
-              path={`${ROUTES.HOME}:redirect`}
-              exact
-            >
-              <Home />
-            </IsUserRedirect>
-            <Route path="*">
-              <NotFound />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path={ROUTES.HOME} exact element={<Home />}/>
+            <Route path={ROUTES.ALL_COMPANIES} exact element={<AllCompanies />}/>
+            <Route path={`${ROUTES.COMPANY}/:company${ROUTES.CALL_COURIER}`} exact
+                   element={<ProtectedRoute><CallCourier /></ProtectedRoute>}
+            />
+
+            <Route path={`${ROUTES.COMPANY}/:company`} exact element={<Company />}/>
+            <Route path={ROUTES.CONFIRMATION} exact element={<ProtectedRoute><Confirmation /></ProtectedRoute>}/>
+            <Route path={ROUTES.PROFILE} exact element={<ProtectedRoute><Profile /></ProtectedRoute>}/>
+            <Route path={`${ROUTES.TRACK_CARGO}/:order`} exact element={<ProtectedRoute><TrackCargo /></ProtectedRoute>}/>
+
+            <Route path={ROUTES.FAQ} element={<FAQ />}/>
+            <Route path={ROUTES.ABOUT} element={<About />}/>
+            <Route path={`${ROUTES.BLOG}/:blog_name`} element={<Blog />}/>
+            <Route path={`${ROUTES.HOME}:redirect`} exact
+                   element={<IsUserRedirect loggedInPath={ROUTES.HOME}><Home /></IsUserRedirect>}/>
+            <Route path="*" element={<NotFound />}/>
+          </Routes>
         </Suspense>
       </ScrollToTopOnRouteChange>
       <ModalContainer />

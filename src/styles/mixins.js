@@ -1,8 +1,8 @@
 import { colors, fonts, screens, transitions } from "./variables";
 
 export const HoveredBlueBtnStyle = `
-background: ${colors.blueHover};
-box-shadow: 0px 10px 30px rgba(0, 108, 255, 0.4);
+background: ${colors.greenButtonHover};
+box-shadow: 0px 10px 30px rgba(0, 176, 87, 0.4);
 `;
 
 export const PrimaryBtnStyle = `

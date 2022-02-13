@@ -15,6 +15,7 @@ import {
   IconContainer,
   LogoContainer,
   SearchboxButton,
+  LoginButton,
 } from "./styles/header";
 
 function Header({ children, ...rest }) {
@@ -50,6 +51,10 @@ Header.SearchboxButton = function HeaderSearchboxButton({ children, ...rest }) {
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...rest }) {
   return <ButtonLink {...rest}>{children}</ButtonLink>;
+};
+
+Header.ProfileButton = function HeaderProfileButton({ children, ...rest }) {
+  return <LoginButton {...rest}>{children}</LoginButton>;
 };
 
 Header.AvatarButton = function HeaderAvatarButton({ children, ...rest }) {

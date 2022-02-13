@@ -19,7 +19,7 @@ import { screens } from "../styles/variables";
 import * as ROUTES from "../constants/routes";
 import LogoSVG from "../assets/logo.svg";
 import { IsOutsideClick } from "../helpers";
-import { useHeaderLogic } from "../hooks";
+import {useCurrentUser, useHeaderLogic} from "../hooks";
 import { Form, Formik } from "formik";
 
 function HeaderContainer() {
@@ -42,6 +42,8 @@ function HeaderContainer() {
     handleCargoTrackClick,
     handleSearchSubmit,
   } = handlers;
+
+  const { currentUser } = useCurrentUser();
 
   return (
     <Header>
@@ -100,19 +102,33 @@ function HeaderContainer() {
             <Header.ButtonLink as="button" onClick={handleCargoTrackClick}>
               {t(lnMap.header_btn)}
             </Header.ButtonLink>
-            <div css="margin: 0 35px;">
+            <div css="margin: 0 15px;">
               <LineIcon />
             </div>
           </Flex>
           <Flex align="center" justify="flex-end">
             <div
               css={`
+                display: none;
                 position: relative;
+                @media ${screens.md} {
+                  display: flex;
+                }
               `}
             >
-              <Header.AvatarButton onClick={handleAvatarClick}>
-                <AvatarIcon />
-              </Header.AvatarButton>
+              {
+                currentUser ? (
+                    <Header.AvatarButton onClick={handleAvatarClick}>
+                      <AvatarIcon />
+                    </Header.AvatarButton>
+                ) : (
+                    <Header.ProfileButton onClick={handleAvatarClick}>
+                      {t(lnMap.header_login_btn)}
+                    </Header.ProfileButton>
+                )
+              }
+
+
               {showAccountDropdownMenu && (
                 <IsOutsideClick
                   Component={

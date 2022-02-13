@@ -78,6 +78,7 @@ const ProductCard = {
 export const Header = {
   header_search: "Gözle",
   header_btn: "Kargo yzarlamak",
+  header_login_btn: "İçeri gir",
   current_language: "Turkmen",
 };
 

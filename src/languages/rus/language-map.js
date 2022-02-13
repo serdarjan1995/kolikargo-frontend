@@ -79,6 +79,7 @@ const ProductCard = {
 export const Header = {
   header_search: "Искать",
   header_btn: "Отследить груз",
+  header_login_btn: "Войти",
   current_language: "русский",
 };
 

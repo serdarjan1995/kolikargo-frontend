@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import { Link as ReactRouterLink } from "react-router-dom";
 import {
   colors,
   fonts,
@@ -78,7 +77,7 @@ export const SearchboxButton = styled.button`
   transform: translateY(-50%);
 `;
 
-export const ButtonLink = styled(ReactRouterLink)`
+export const ButtonLink = styled.button`
   border-radius: ${radius.roundedMD};
   border: 2px solid ${colors.gray4};
   color: black;
@@ -94,6 +93,26 @@ export const ButtonLink = styled(ReactRouterLink)`
   &:focus {
     background: #1e1e1e;
     border-color: #1e1e1e;
+    color: white;
+  }
+`;
+
+export const LoginButton = styled.button`
+  border-radius: ${radius.roundedMD};
+  border: 2px solid #00A857;
+  color: #00A857;
+  font-family: ${fonts.gilroy};
+  font-weight: 600;
+  padding: 14px 35px;
+  outline: none;
+  transition: 150ms;
+  transition-property: color, background, border-color;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background: #00A857;
+    border-color: #00A857;
     color: white;
   }
 `;

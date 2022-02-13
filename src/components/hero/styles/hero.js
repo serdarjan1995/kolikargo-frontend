@@ -4,13 +4,7 @@ import { Link as ReactRouterLink } from "react-router-dom";
 import { HoveredBlueBtnStyle } from "../../../styles/mixins";
 
 export const Container = styled.div`
-  background: linear-gradient(
-    107.87deg,
-    #eef7ff 0%,
-    #dce7f4 43.08%,
-    #dde8ff 65.93%,
-    #e7f5ff 83.81%
-  );
+  background: #F9F9F9;
   border-radius: ${radius.roundedLG};
   padding-top: 45px;
   @media ${screens.lg} {
@@ -60,7 +54,7 @@ export const Text = styled.p`
 `;
 
 export const ButtonLink = styled(ReactRouterLink)`
-  background: ${colors.blue};
+  background: ${colors.greenButton};
   border-radius: ${radius.roundedMD};
   color: white;
   display: inline-block;

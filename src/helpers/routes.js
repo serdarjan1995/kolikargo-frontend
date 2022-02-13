@@ -1,58 +1,25 @@
 import React from "react";
-import { Route, Redirect } from "react-router-dom";
+import {Navigate, useLocation} from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 import { useCurrentUser } from "../hooks";
 
-export function IsUserRedirect({ loggedInPath, children, ...rest }) {
+export function IsUserRedirect({ loggedInPath, children }) {
   const { currentUser } = useCurrentUser();
 
-  return (
-    <Route
-      {...rest}
-      render={() => {
-        if (!currentUser) {
-          return children;
-        }
+  if (currentUser) {
+    return <Navigate replace to={loggedInPath} />
+  }
 
-        if (currentUser) {
-          return (
-            <Redirect
-              to={{
-                pathname: loggedInPath,
-              }}
-            />
-          );
-        }
-
-        return null;
-      }}
-    />
-  );
+  return children;
 }
 
-export function ProtectedRoute({ children, ...rest }) {
+export function ProtectedRoute({ children }) {
   const { currentUser } = useCurrentUser();
-  return (
-    <Route
-      {...rest}
-      render={({ location }) => {
-        if (currentUser) {
-          return children;
-        }
+  const location = useLocation();
 
-        if (!currentUser) {
-          return (
-            <Redirect
-              to={{
-                pathname: `${ROUTES.HOME}redirect`,
-                state: { from: location },
-              }}
-            />
-          );
-        }
+  if (!currentUser) {
+    return <Navigate replace to={`${ROUTES.HOME}redirect`} state={{from: location }}/>
+  }
 
-        return null;
-      }}
-    />
-  );
+  return children;
 }
