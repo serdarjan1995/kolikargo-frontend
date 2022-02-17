@@ -7,6 +7,7 @@ import {
   Box,
   IconContainer,
   ButtonMobile,
+  ButtonShowResults,
   TitleContainer,
   ButtonSmall,
   Container,
@@ -82,6 +83,13 @@ CargoPicker.ButtonMobile = function CargoPickerButtonMobile({
   ...rest
 }) {
   return <ButtonMobile {...rest}>{children}</ButtonMobile>;
+};
+
+CargoPicker.ButtonShowResults = function CargoPickerButtonMobile({
+                                                              children,
+                                                              ...rest
+                                                            }) {
+  return <ButtonShowResults {...rest}>{children}</ButtonShowResults>;
 };
 
 export default CargoPicker;

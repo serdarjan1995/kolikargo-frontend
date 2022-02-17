@@ -5,6 +5,11 @@ background: ${colors.greenButtonHover};
 box-shadow: 0px 10px 30px rgba(0, 176, 87, 0.4);
 `;
 
+export const HoveredBlackBtnStyle = `
+background: ${colors.black};
+box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+`;
+
 export const PrimaryBtnStyle = `
  background: #3B71FE;
  color: white;

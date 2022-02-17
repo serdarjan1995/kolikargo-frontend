@@ -1,8 +1,8 @@
 import React from "react";
 import { Feature, Flex } from "../../components";
-import Advantage1IMG from "../../assets/home/img/advantage-1.png";
-import Advantage2IMG from "../../assets/home/img/advantage-2.png";
-import Advantage3IMG from "../../assets/home/img/advantage-3.png";
+import Advantage1IMG from "../../assets/home/img/advantage-1.svg";
+import Advantage2IMG from "../../assets/home/img/advantage-2.svg";
+import Advantage3IMG from "../../assets/home/img/advantage-3.svg";
 import { useTranslation } from "react-i18next";
 import lnMap from "../../languages/language-maps/home-lang-map";
 import "styled-components/macro";

@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { HoveredBlueBtnStyle } from "../../../../styles/mixins";
+import {HoveredBlackBtnStyle, HoveredBlueBtnStyle} from "../../../../styles/mixins";
 import {
   colors,
   fonts,
@@ -159,6 +159,30 @@ export const ButtonMobile = styled(Button)`
 
   @media ${screens.lg} {
     display: none;
+  }
+`;
+
+export const ButtonShowResults = styled.button`
+  align-items: center;
+  border-radius: ${radius.roundedMD};
+  color: white;
+  font-family: ${fonts.gilroy};
+  font-weight: 600;
+  display: flex;
+  margin: auto;
+  max-width: 244px;
+  height: auto;
+  padding: 14px 46px;
+  align-self:center;
+  background: ${colors.blackDark};
+  flex-shrink: 0;
+  justify-content: center;
+  transition: ${transitions.buttonBgHover};
+  outline: none;
+
+  &:hover,
+  &:focus {
+    ${HoveredBlackBtnStyle}
   }
 `;
 

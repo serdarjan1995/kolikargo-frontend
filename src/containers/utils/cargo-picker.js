@@ -32,7 +32,7 @@ function CargoPickerContainer() {
       >
         {({ setFieldValue }) => (
           <Form>
-            <Flex direction="column">
+            <Flex direction="column" align="center">
               <CargoPicker.TitleContainer>
                 <CargoPicker.Title>
                   {t(lnMap.hero_card_title)}
@@ -90,7 +90,7 @@ function CargoPickerContainer() {
                     </CargoPicker.Text>
                   </CargoPicker.ContentInnerWrapper>
                 </CargoPicker.ContentWrapper>
-                <CargoPicker.ButtonMobile>
+                <CargoPicker.ButtonShowResults>
                   <div
                     css={`
                       margin-right: 12px;
@@ -99,20 +99,20 @@ function CargoPickerContainer() {
                     <SearchIcon />
                   </div>
                   <p>{t(lnMap.hero_card_btn)}</p>
-                </CargoPicker.ButtonMobile>
-                <CargoPicker.Button>
-                  <div
-                    css={`
-                      align-items: center;
-                      color: white;
-                      display: flex;
-                      font-size: 2rem;
-                      justify-content: center;
-                    `}
-                  >
-                    <SearchIcon />
-                  </div>
-                </CargoPicker.Button>
+                </CargoPicker.ButtonShowResults>
+                {/*<CargoPicker.Button>*/}
+                {/*  <div*/}
+                {/*    css={`*/}
+                {/*      align-items: center;*/}
+                {/*      color: white;*/}
+                {/*      display: flex;*/}
+                {/*      font-size: 2rem;*/}
+                {/*      justify-content: center;*/}
+                {/*    `}*/}
+                {/*  >*/}
+                {/*    <SearchIcon />*/}
+                {/*  </div>*/}
+                {/*</CargoPicker.Button>*/}
               </CargoPicker.Box>
             </Flex>
           </Form>
