@@ -23,15 +23,15 @@ const HeroSection = {
 
   hero_presentation_title2: "How to send a parcel?",
   hero_presentation_text2: "Shipping Details",
-  hero_presentation_content2_title1: "Packaging",
+  hero_presentation_content2_title1: "Sending and tracking",
   hero_presentation_content2_text1:
-    "Measure your cargo to be shipped and choose a shipping company",
-  hero_presentation_content2_title2: "Preparation",
+      "When your cargo is in transit, you can track it by the provided track number.",
+  hero_presentation_content2_title2: "Packaging",
   hero_presentation_content2_text2:
-    "The courier takes your cargo from your address on the same day, packs it and prepares it for shipment.",
-  hero_presentation_content2_title3: "Sending and tracking",
+    "Measure your cargo to be shipped and choose a shipping company",
+  hero_presentation_content2_title3: "Preparation",
   hero_presentation_content2_text3:
-    "When your cargo is in transit, you can track it by the provided track number.",
+    "The courier takes your cargo from your address on the same day, packs it and prepares it for shipment.",
 };
 
 const HomeFAQ = {
@@ -42,9 +42,17 @@ const HomeFAQ = {
   home_faq_tab1_question1: "How to ship the cargo?",
   home_faq_tab1_question2: "How can I track my cargo?",
   home_faq_tab1_question3: "How many days will it take to deliver?",
-  home_faq_tab1_question4: "What should I pay attention to?",
-  home_faq_tab1_question5: "How is the payment made?",
+  home_faq_tab1_question4: "How to pay?",
+  home_faq_tab1_question5: "What should I pay attention to?",
 };
+
+const HomeFAQAnswers = {
+  home_faq_tab1_answer1: "Collect your cargo and choose the company that suits you on the site. After selecting the company, you can click on the \"Call Courier\" button and fill in the required information and then call a courier.",
+  home_faq_tab1_answer2: "When you select the company on the site and create the order, you will be given a tracking number by the system. You can track your cargo by entering the tracking number you received, or you can see it from the last shipments you sent on your profile page.",
+  home_faq_tab1_answer3: "The products you send are delivered in 10-15 days on average.",
+  home_faq_tab1_answer4: "You can make the payment when the courier arrives at your address. You can make your payment online in the future.",
+  home_faq_tab1_answer5: "",
+}
 
 const Blog = {
   blog_title: "Blog",
@@ -71,7 +79,7 @@ const ProductCard = {
   new_companies: "New companies",
   product_card_delivery: "Delivery",
   product_card_kg_price: "Price per kg",
-  product_card_minimum: "Minimum weight",
+  product_card_minimum: "Min",
 };
 
 export const Header = {
@@ -82,7 +90,7 @@ export const Header = {
 };
 
 export const Footer = {
-  footer_copyright: "All rights reserved © 2021",
+  footer_copyright: "All rights reserved © ",
   footer_link_title1: "Company",
   footer_link_title2: "General",
   footer_link_about: "About us",
@@ -353,5 +361,6 @@ export const Shared = {
 export const HomePage = {
   ...HeroSection,
   ...HomeFAQ,
+  ...HomeFAQAnswers,
   ...Blog,
 };

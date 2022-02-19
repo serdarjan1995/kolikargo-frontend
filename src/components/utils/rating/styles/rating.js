@@ -23,7 +23,7 @@ export const IconContainer = styled.div`
 
 export const Rate = styled.p`
   color: white;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 19px;

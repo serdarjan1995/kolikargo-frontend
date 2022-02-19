@@ -22,7 +22,7 @@ function NotFound() {
       >
         <div
           css={`
-            font-family: ${fonts.gilroy};
+            font-family: ${fonts.BaiJamjuree};
             margin: auto;
             text-align: center;
           `}

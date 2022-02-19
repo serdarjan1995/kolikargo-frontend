@@ -7,7 +7,7 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 15px 15px 0 0;
   min-width: 100vw;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   margin-top: auto;
   max-width: 484px;
   padding: 35px;
@@ -31,7 +31,7 @@ export const Form = styled.form`
 
 export const Title = styled.h3`
   color: #141416;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 40px;
@@ -175,7 +175,7 @@ export const SmallBtn = styled.button`
 
 export const Warn = styled.p`
   color: #ff7070;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.2rem;
   font-weight: 400;
   margin: 8px;
@@ -184,7 +184,7 @@ export const Warn = styled.p`
 
 export const Label = styled.label`
   display: block;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.4rem;
   font-weight: 600;
   text-align: start;

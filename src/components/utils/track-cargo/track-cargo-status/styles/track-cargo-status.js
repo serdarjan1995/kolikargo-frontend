@@ -5,7 +5,7 @@ export const Container = styled.div`
   background: white;
   border: 1px solid rgba(238, 241, 242, 1);
   border-radius: 15px;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   padding: 24px 29px;
 
   @media ${screens.md} {

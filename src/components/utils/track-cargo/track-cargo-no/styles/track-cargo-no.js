@@ -4,7 +4,7 @@ import { fonts, screens } from "../../../../../styles/variables";
 export const Container = styled.div`
   border-radius: 15px;
   background: rgba(51, 113, 245, 1);
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   margin-top: 15px;
   padding: 20px 37px;
   padding-top: 22px;

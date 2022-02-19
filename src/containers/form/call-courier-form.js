@@ -33,7 +33,7 @@ const phoneInputStyle = {
   borderRadius: "15px",
   borderWidth: "2px",
   color: "#777E90",
-  fontFamily: fonts.gilroy,
+  fontFamily: fonts.BaiJamjuree,
   fontWeight: "600",
   width: "100%",
 };

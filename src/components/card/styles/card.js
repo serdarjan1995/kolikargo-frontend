@@ -16,18 +16,18 @@ export const Container = styled.div`
 
 export const Background = styled.div`
   border-radius: ${radius.roundedLG};
-  background: ${colors.gray9};
+  /*background: ${colors.gray9};*/
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 80px;
+  /*margin-top: 80px;*/
   max-width: 1327px;
   padding: 0 21px;
   padding-top: 25px;
   padding-bottom: 36px;
 
   @media ${screens.lg} {
-    margin-top: 140px;
+    /*margin-top: 140px;*/
     padding: 63px;
     padding-top: 70px;
     padding-bottom: 80px;
@@ -40,7 +40,7 @@ export const Grid = styled.div`
   grid-template-columns: 1fr;
 
   @media ${screens.sm} {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 278px));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 278px));
   }
 
   @media ${screens.lg} {
@@ -80,7 +80,7 @@ export const TitleAlt = styled.p`
 
 export const DescriptionContainer = styled.div`
   background: ${colors.whiteish};
-  border: 1px solid rgba(230, 232, 236, 1);
+  /*border: 1px solid rgba(230, 232, 236, 1);*/
   padding: 0 20px;
   padding-bottom: 30px;
   padding-top: 15px;
@@ -110,7 +110,7 @@ export const Price = styled.p`
 
 export const PriceText = styled.p`
   color: #a3a3a3;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 5px;

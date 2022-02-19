@@ -65,7 +65,7 @@ function AllCompanies() {
         </div>
         <div
           css={`
-            font-family: ${fonts.gilroy};
+            font-family: ${fonts.BaiJamjuree};
             margin-top: 34px;
 
             @media ${screens.lg} {

@@ -147,7 +147,7 @@ export const ButtonMobile = styled(Button)`
   align-items: center;
   border-radius: ${radius.roundedMD};
   color: white;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 600;
   display: flex;
   margin: 10px auto;
@@ -166,7 +166,7 @@ export const ButtonShowResults = styled.button`
   align-items: center;
   border-radius: ${radius.roundedMD};
   color: white;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 600;
   display: flex;
   margin: auto;

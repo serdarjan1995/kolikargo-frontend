@@ -31,7 +31,7 @@ export const Item = styled.li`
 
 export const Text = styled.p`
   color: black;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 500;
 
   @media ${screens.md} {

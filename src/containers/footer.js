@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Footer, Form as CustomForm } from "../components";
 import lnMap from "../languages/language-maps/shared-lang-map";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo-white.svg";
 import "styled-components/macro";
 import { IconButton } from "../components/button";
 import {
@@ -28,9 +28,12 @@ function FooterContainer() {
     [t]
   );
 
+  const currentYear = new Date().getFullYear()
+
   return (
     <div
       css={`
+        background-color: #292D36;
         @media ${screens.md} {
           border-top: 2px solid #e6e8ec;
         }
@@ -53,7 +56,7 @@ function FooterContainer() {
                 <YouTubeIcon />
               </Footer.SocialLink>
             </Footer.SocialContainer>
-            <Footer.Copyright>{t(lnMap.footer_copyright)}</Footer.Copyright>
+            <Footer.Copyright>{t(lnMap.footer_copyright)} {currentYear}</Footer.Copyright>
           </Footer.LeftCol>
           <Footer.RightCol>
             <Footer.Col>
@@ -116,7 +119,7 @@ function FooterContainer() {
                 {({handleChange, errors }) => (
                   <Form>
                     <Footer.InputTitle>
-                      {t(lnMap.footer_subscription_title)} 🔥
+                      {t(lnMap.footer_subscription_title)}
                     </Footer.InputTitle>
                     <Footer.InputContainer>
                       <Footer.Input
@@ -141,9 +144,8 @@ function FooterContainer() {
               </Formik>
             </Footer.SubscriptionContainer>
           </Footer.RightCol>
-          <Footer.HR />
           <Footer.CopyrightMobile>
-            {t(lnMap.footer_copyright)}
+            {t(lnMap.footer_copyright)} {currentYear}
           </Footer.CopyrightMobile>
         </Footer.Row>
       </Footer>

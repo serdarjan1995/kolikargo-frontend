@@ -96,12 +96,13 @@ function SearchboxLogic(props) {
             value={value}
             style={inputStyle}
             {...inputProps}
+            className="search-padding"
           />
           <CargoPicker.Text>{text}</CargoPicker.Text>
         </CargoPicker.ContentInnerWrapper>
       ) : (
         <InputContainer>
-          <Input onChange={(e) => updateQuery(e)} />
+          <Input onChange={(e) => updateQuery(e)} className="search-padding"/>
         </InputContainer>
       )}
 

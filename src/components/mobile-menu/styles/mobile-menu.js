@@ -99,6 +99,6 @@ export const IconContainer = styled.div`
 `;
 
 export const ButtonText = styled.p`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 600;
 `;

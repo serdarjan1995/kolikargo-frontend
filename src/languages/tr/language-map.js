@@ -25,15 +25,15 @@ const HeroSection = {
 
   hero_presentation_title2: "Kargo nasıl gönderilir?",
   hero_presentation_text2: "Kargo gönderim detayları",
-  hero_presentation_content2_title1: "Paketleme",
+  hero_presentation_content2_title1: "Gönderi ve takip",
   hero_presentation_content2_text1:
-    "Gönderinizi ölçün ve bir kargo şirketi seçin",
-  hero_presentation_content2_title2: "Hazırlama",
+      "Kargonuz yola çıktığında, size verilen takip numarası ile takip edebilirsiniz",
+  hero_presentation_content2_title2: "Paketleme",
   hero_presentation_content2_text2:
-    "Kurye kargonuzu aynı gün adresinizden teslim alır, paketler ve sevkiyata hazır hale getirir.",
-  hero_presentation_content2_title3: "Gönderi ve takip",
+    "Gönderinizi ölçün ve bir kargo şirketi seçin",
+  hero_presentation_content2_title3: "Hazırlama",
   hero_presentation_content2_text3:
-    "Kargonuz yola çıktığında, size verilen takip numarası ile takip edebilirsiniz",
+    "Kurye kargonuzu aynı gün adresinizden teslim alır, paketler ve sevkiyata hazır hale getirir.",
 };
 
 const HomeFAQ = {
@@ -45,9 +45,17 @@ const HomeFAQ = {
   home_faq_tab1_question1: "Kargo nasıl gönderilir?",
   home_faq_tab1_question2: "Kargomu nasıl takip edebilirim?",
   home_faq_tab1_question3: "Kaç günde teslim edilir?",
-  home_faq_tab1_question4: "Nelere dikkat etmeliyim?",
-  home_faq_tab1_question5: "Ödeme nasıl yapılır?",
+  home_faq_tab1_question4: "Ödeme nasıl yapılır?",
+  home_faq_tab1_question5: "Nelere dikkat etmeliyim?",
 };
+
+const HomeFAQAnswers = {
+  home_faq_tab1_answer1: "Kargolarınızı biriktirip sitede size uygun olan şirketi seçin. Şirketi seçtikten sonra \"Kurye çağır\" butonuna tıklayıp gereken bilgileri doldurduktan sonra kurye çağırabilirsiniz.",
+  home_faq_tab1_answer2: "Sitede şirketi seçip siparişi oluşturduğunuzda, size sistem tarafından takip numarası verilecektir. Aldığınız takip numarayi girerek kargonuzu takip edebilirsiniz veya profil sayfanızda en son gönderdiğiniz kargolardan görebilirsiniz.",
+  home_faq_tab1_answer3: "Gönderdiğiniz ürünler ortalama olarak 10-15 gün içinde teslim edilir.",
+  home_faq_tab1_answer4: "Ödemeye kurye adresinize geldiğinde yapabilirsiniz. İleri tarihte online şekilde ödemenizi yapabilirsiniz.",
+  home_faq_tab1_answer5: "",
+}
 
 const Blog = {
   blog_title: "Blog",
@@ -74,7 +82,7 @@ const ProductCard = {
   new_companies: "Yeni şirketler",
   product_card_delivery: "Teslimat",
   product_card_kg_price: "Kg ücreti",
-  product_card_minimum: "Minimum gönderi",
+  product_card_minimum: "Min",
 };
 
 export const Header = {
@@ -85,7 +93,7 @@ export const Header = {
 };
 
 export const Footer = {
-  footer_copyright: "Tüm hakları saklıdır © 2021",
+  footer_copyright: "Tüm hakları saklıdır © ",
   footer_link_title1: "Şirket",
   footer_link_title2: "Genel",
   footer_link_about: "Hakkımızda",
@@ -357,5 +365,6 @@ export const Shared = {
 export const HomePage = {
   ...HeroSection,
   ...HomeFAQ,
+  ...HomeFAQAnswers,
   ...Blog,
 };

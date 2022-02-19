@@ -114,7 +114,7 @@ function useCallCourierFormLogic() {
           textAlign: "center",
           padding: "17px 23px",
           fontSize: "1.7rem",
-          fontFamily: fonts.gilroy,
+          fontFamily: fonts.BaiJamjuree,
           border: "2px solid #E6E8EC",
           borderRadius: "15px",
           color: "#777E90",

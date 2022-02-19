@@ -31,7 +31,7 @@ function useMyCargosLogic() {
       ).then((data) => setDisplayedCargos(data));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [order, getData]);
+  }, []);
 
   const handleSubmit = (values) => {
     const { track_no: order } = values;

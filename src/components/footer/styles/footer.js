@@ -3,17 +3,12 @@ import { Link as ReactRouterLink } from "react-router-dom";
 import { fonts, screens, transitions } from "../../../styles/variables";
 
 export const Container = styled.footer`
-  background-color: #fcfcfd;
   box-sizing: content-box;
   margin: auto;
   max-width: 1120px;
   padding: 32px;
   padding-bottom: 48px;
   padding-top: 64px;
-
-  @media ${screens.md} {
-    background: transparent;
-  }
 `;
 
 export const Row = styled.div`
@@ -60,11 +55,11 @@ export const List = styled.ul`
 `;
 
 export const ListTitle = styled.h3`
-  color: #5b5b5b;
+  color: white;
   display: none;
 
   @media ${screens.md} {
-    font-family: ${fonts.gilroy};
+    font-family: ${fonts.BaiJamjuree};
     font-size: 1.7rem;
     font-weight: 600;
     display: block;
@@ -76,8 +71,9 @@ export const Item = styled.li`
 `;
 
 export const InputTitle = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  color: white;
 `;
 
 export const SubscriptionContainer = styled.div`
@@ -92,8 +88,8 @@ export const SubscriptionContainer = styled.div`
 `;
 
 export const InputContainer = styled.div`
-  border: 2px solid #e6e8ec;
   border-radius: 15px;
+  background-color: #21242B;
   display: flex;
   margin-top: 16px;
   padding: 14px 16px;
@@ -104,8 +100,9 @@ export const InputContainer = styled.div`
 `;
 
 export const Input = styled.input`
+  color: #777E90;
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-right: 18px;
   outline: none;
@@ -126,18 +123,18 @@ export const HR = styled.hr`
 export const ButtonLink = styled(ReactRouterLink)`
   color: #777e90;
   font-family: ${fonts.dmSans};
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
 
   @media ${screens.md} {
-    font-family: ${fonts.gilroy};
+    font-family: ${fonts.BaiJamjuree};
     font-size: 1.6rem;
     font-weight: 600;
   }
 `;
 
 export const ImgContainer = styled.div`
-  max-width: 128px;
+  max-width: 200px;
 `;
 
 export const Logo = styled.img``;
@@ -175,8 +172,8 @@ export const IconContainer = styled.div``;
 export const Copyright = styled.p`
   color: #818181;
   display: none;
-  font-family: ${fonts.gilroy};
-  font-size: 1.4rem;
+  font-family: ${fonts.BaiJamjuree};
+  font-size: 1.6rem;
   font-weight: 600;
   margin-top: 50px;
 
@@ -186,8 +183,9 @@ export const Copyright = styled.p`
 `;
 
 export const CopyrightMobile = styled.p`
-  font-family: ${fonts.poppins};
-  font-size: 1.2rem;
+  font-family: ${fonts.BaiJamjuree};
+  font-size: 1.6rem;
+  color: #818181;
 
   margin-top: 24px;
 

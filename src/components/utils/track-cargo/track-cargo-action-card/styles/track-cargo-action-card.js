@@ -7,7 +7,7 @@ export const Container = styled.div`
   border: 0.7px solid rgba(238, 241, 242, 1);
   border-radius: 15px;
   color: #eef1f2;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   padding: 28px 27px;
 
   @media ${screens.lg} {

@@ -39,7 +39,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Text = styled.p`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 16px;

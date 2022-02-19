@@ -13,9 +13,9 @@ export const Container = styled.button`
 `;
 
 export const LargeButton = styled.button`
-  ${PrimaryBtnStyle}
+  ${PrimaryBtnStyle};
   border-radius: 20px;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 21px;
@@ -42,7 +42,7 @@ export const LargeButton = styled.button`
 
 export const IconButton = styled.button`
   align-items: center;
-  background-color: #3b71fe;
+  background-color: ${colors.greenButton};
   border-radius: 10px;
   color: ${({ color }) => color || "white"};
   display: flex;
@@ -54,7 +54,7 @@ export const IconButton = styled.button`
 
   &:hover,
   &:focus {
-    background: #2965e5;
+    background: ${colors.greenButtonHover};
   }
 `;
 
@@ -62,7 +62,7 @@ export const SmallButton = styled.button`
   background: #3371f5;
   border-radius: 15px;
   color: white;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.6rem;
   font-weight: 600;
   padding: 13px 30px;

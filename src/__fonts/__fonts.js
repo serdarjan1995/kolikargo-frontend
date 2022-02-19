@@ -7,6 +7,11 @@ import GilroyBoldWoff2 from "./Gilroy-Bold.woff2";
 import GilroyExtraBoldWoff1 from "./Gilroy-Extrabold.woff";
 import GilroyExtraBoldWoff2 from "./Gilroy-Extrabold.woff2";
 
+import BaiJamjureeRegularTtf from "./Bai+Jamjuree/BaiJamjuree-Regular.ttf";
+import BaiJamjureeSemiBoldTtf from "./Bai+Jamjuree/BaiJamjuree-SemiBold.ttf";
+import BaiJamjureeBoldTtf from "./Bai+Jamjuree/BaiJamjuree-Medium.ttf";
+import BaiJamjureeExtraBoldTtf from "./Bai+Jamjuree/BaiJamjuree-Bold.ttf";
+
 const GilroyRegular = `
 @font-face {
     font-family: 'Gilroy';
@@ -55,11 +60,61 @@ const GilroyExtraBold = `
 }
 `;
 
+// BaiJamjuree
+
+const BaiJamjureeRegular = `
+@font-face {
+    font-family: 'BaiJamjuree';
+    src: local('BaiJamjuree'),
+    url(${BaiJamjureeRegularTtf}) format('ttf'),
+    font-style:normal;
+    font-swap: swap;
+    font-weight:400;
+}
+`;
+
+const BaiJamjureeSemibold = `
+@font-face {
+    font-family: 'BaiJamjuree';
+    src: local('BaiJamjuree'),
+    url(${BaiJamjureeSemiBoldTtf}) format('ttf'),
+    font-style:normal;
+    font-swap: swap;
+    font-weight:600;
+}
+`;
+
+const BaiJamjureeBold = `
+@font-face {
+    font-family: 'BaiJamjuree';
+    src: local('BaiJamjuree'),
+    url(${BaiJamjureeBoldTtf}) format('ttf');
+    font-style:normal;
+    font-swap: swap;
+    font-weight:700;
+}
+`;
+
+const BaiJamjureeExtraBold = `
+@font-face {
+    font-family: 'BaiJamjuree';
+    src: local('BaiJamjuree'),
+    url(${BaiJamjureeExtraBoldTtf}) format('ttf');
+    font-style:normal;
+    font-swap: swap;
+    font-weight:800;
+}
+`;
+
 const fonts = `
    ${GilroyRegular}
    ${GilroySemibold}
    ${GilroyBold}
    ${GilroyExtraBold}
+   ${BaiJamjureeRegular}
+   ${BaiJamjureeSemibold}
+   ${BaiJamjureeBold}
+   ${BaiJamjureeExtraBold}
 `;
 
 export default fonts;

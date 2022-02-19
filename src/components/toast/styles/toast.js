@@ -11,7 +11,7 @@ import { fonts, indexes, screens } from "../../../styles/variables";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   left: 50%;
   min-width: 250px;
   position: fixed;

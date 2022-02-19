@@ -36,6 +36,7 @@ export { default as TrackCargoStatusContainer } from "./utils/track-cargo/track-
 
 export { default as FeatureContainer1 } from "./feature/feature-1";
 export { default as FeatureContainer2 } from "./feature/feature-2";
+export { default as HowToSendCargoContainer } from "./feature/how_to_send_cargo";
 
 /* Mobile */
 

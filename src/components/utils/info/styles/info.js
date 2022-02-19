@@ -3,7 +3,7 @@ import { Link as ReactRouterLink } from "react-router-dom";
 import { fonts } from "../../../../styles/variables";
 
 export const Container = styled.div`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   margin: auto;
   text-align: center;
 `;

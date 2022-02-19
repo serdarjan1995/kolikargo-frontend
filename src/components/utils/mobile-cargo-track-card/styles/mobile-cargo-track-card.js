@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const ButtonLink = styled(ReactRouterLink)`
   display: block;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   padding: 23px 25px;
 `;
 

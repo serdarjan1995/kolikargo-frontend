@@ -48,7 +48,7 @@ right: 13px;
 
 
 @media ${screens.lg} {
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 3rem;
   font-weight: 700;
   margin: initial;

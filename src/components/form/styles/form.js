@@ -3,7 +3,7 @@ import { fonts, screens } from "../../../styles/variables";
 
 const inputTextStyle = `
     color: black;
-    font-family: ${fonts.gilroy};
+    font-family: ${fonts.BaiJamjuree};
     font-size: 1.6rem;
     font-weight: 600;
   `;
@@ -11,7 +11,7 @@ const inputTextStyle = `
 export const Container = styled.form``;
 
 export const Title = styled.h3`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: ${({ small }) => (small ? "1.8rem" : "2rem")};
   font-weight: 600;
   margin-bottom: 17px;
@@ -73,7 +73,7 @@ export const Section = styled.div`
 
 export const FieldTitle = styled.h4`
   color: #b1b5c3;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 14px;
@@ -81,7 +81,7 @@ export const FieldTitle = styled.h4`
 
 export const Legend = styled.legend`
   background: white;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.4rem;
   font-weight: 400;
   left: 20px;
@@ -117,7 +117,7 @@ export const Label = styled.label`
       : variant === "warn"
       ? "#FF3737"
       : "#777E90"};
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: ${({ variant }) =>
     variant === "active" || variant === "filled" || variant === "warn"
       ? "1.3rem"
@@ -137,7 +137,7 @@ export const Label = styled.label`
 
 export const Warn = styled.p`
   color: red;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.2rem;
   margin-bottom: 20px !important;
   margin-top: 5px !important;
@@ -145,7 +145,7 @@ export const Warn = styled.p`
 
 export const Text = styled.p`
   color: #a6a6a6;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.3rem;
   margin-top: 8px;
 `;
@@ -157,7 +157,7 @@ export const RadioLabel = styled.label`
   border-radius: 15px;
   cursor: pointer;
   color: #777e90;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.6rem;
   font-weight: 600;
   display: inline-block;

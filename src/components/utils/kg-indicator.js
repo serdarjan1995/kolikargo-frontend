@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 import { fonts } from "../../styles/variables";
 
 const Indicator = styled.p`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 2rem;
   font-weight: 700;
   position: absolute;

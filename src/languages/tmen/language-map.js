@@ -23,15 +23,15 @@ const HeroSection = {
 
   hero_presentation_title2: "Kargo nädip iberiler?",
   hero_presentation_text2: "Kargo iberme ädimleri",
-  hero_presentation_content2_title1: "Gaplamak",
+  hero_presentation_content2_title1: "Kargo yzarlama",
   hero_presentation_content2_text1:
-    "Iberjek kargoňyzy ölçäp kargo firmasyny saýlaň",
-  hero_presentation_content2_title2: "Taýýarlama",
+      "Kargoňyz ýola çykanda, size berilen trek nomeri bilen yzarlap bilersiňiz",
+  hero_presentation_content2_title2: "Gaplamak",
   hero_presentation_content2_text2:
-    "Çapar gün içinde kargoňyzy adresiňizden alar we gaplap ibermäge taýýarlar",
-  hero_presentation_content2_title3: "Kargo yzarlama",
+    "Iberjek kargoňyzy ölçäp kargo firmasyny saýlaň",
+  hero_presentation_content2_title3: "Taýýarlama",
   hero_presentation_content2_text3:
-    "Kargoňyz ýola çykanda, size berilen trek nomeri bilen yzarlap bilersiňiz",
+    "Çapar gün içinde kargoňyzy adresiňizden alar we gaplap ibermäge taýýarlar",
 };
 
 const HomeFAQ = {
@@ -43,9 +43,17 @@ const HomeFAQ = {
   home_faq_tab1_question1: "Kargo nähili iberiler?",
   home_faq_tab1_question2: "Kargomy nädip yzarlap bilerin?",
   home_faq_tab1_question3: "Kargom näçe günde gowşurylar?",
-  home_faq_tab1_question4: "Nämelere üns bermeli?",
-  home_faq_tab1_question5: "Tölegi nädip geçmeli?",
+  home_faq_tab1_question4: "Tölegi nädip geçmeli?",
+  home_faq_tab1_question5: "Nämelere üns bermeli?",
 };
+
+const HomeFAQAnswers = {
+  home_faq_tab1_answer1: "Yüküňizi ýygnaň we saýtda size laýyk kompaniýany saýlaň. Kompaniýany saýlanyňyzdan soň, \"Kurýer çagyr\" düwmesine basyp, zerur maglumatlary dolduryp, soňra bolsa çapar çagyryp bilersiňiz.",
+  home_faq_tab1_answer2: "Saýtdaky kompaniýany saýlap, sargyt döredeniňizde, ulgam tarapyndan yzarlaýyş belgisi size berler. Alnan yzarlaýyş belgisini girizip yzarlap bilersiňiz ýa-da profil sahypaňyza iberen iň soňky iberişiňizden görüp bilersiňiz.",
+  home_faq_tab1_answer3: "Iberýän ýüküňiz ortaça 10-15 günüň içinde eltilýär.",
+  home_faq_tab1_answer4: "Kurýer adresiňize gelende töleg edip bilersiňiz. Geljekde tölegiňizi onlaýn edip bilersiňiz.",
+  home_faq_tab1_answer5: "",
+}
 
 const Blog = {
   blog_title: "Blog",
@@ -72,7 +80,7 @@ const ProductCard = {
   new_companies: "Täze firmalar",
   product_card_delivery: "Eltmesi",
   product_card_kg_price: "Kg bahasy",
-  product_card_minimum: "Minimum agramy",
+  product_card_minimum: "Min",
 };
 
 export const Header = {
@@ -83,7 +91,7 @@ export const Header = {
 };
 
 export const Footer = {
-  footer_copyright: "Ähli hukuklar goralandyr © 2021",
+  footer_copyright: "Ähli hukuklar goralandyr © ",
   footer_link_title1: "Firma",
   footer_link_title2: "Umumy",
   footer_link_about: "Biz barada",
@@ -350,5 +358,6 @@ export const Shared = {
 export const HomePage = {
   ...HeroSection,
   ...HomeFAQ,
+  ...HomeFAQAnswers,
   ...Blog,
 };

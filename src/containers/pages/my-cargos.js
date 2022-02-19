@@ -127,7 +127,7 @@ function MyCargosContainer() {
                     >
                       <Dropdown.IconContainer
                         css={`
-                          ${circledIconStyle}
+                          ${circledIconStyle};
                           font-size: 1.6rem;
 
                           @media ${screens.lg} {

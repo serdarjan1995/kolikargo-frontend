@@ -42,6 +42,14 @@ const HomeFAQ = {
   home_faq_tab1_question5: "home_faq_tab1_question5",
 };
 
+const HomeFAQAnswers = {
+  home_faq_tab1_answer1: "home_faq_tab1_answer1",
+  home_faq_tab1_answer2: "home_faq_tab1_answer2",
+  home_faq_tab1_answer3: "home_faq_tab1_answer3",
+  home_faq_tab1_answer4: "home_faq_tab1_answer4",
+  home_faq_tab1_answer5: "home_faq_tab1_answer5",
+}
+
 const Blog = {
   blog_title: "blog_title",
   blog_text: "blog_text",
@@ -59,6 +67,7 @@ export const Header = {
 const HomePage = {
   ...HeroSection,
   ...HomeFAQ,
+  ...HomeFAQAnswers,
   ...Blog,
 };
 

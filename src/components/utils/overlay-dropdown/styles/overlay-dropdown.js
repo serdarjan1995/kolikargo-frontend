@@ -16,7 +16,7 @@ export const List = styled.ul`
   border-bottom-right-radius: 5px;
   border: 1px solid rgba(236, 238, 244, 1);
   border-top: 0;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   position: absolute;
 
   z-index: 10;

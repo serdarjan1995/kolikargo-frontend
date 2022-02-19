@@ -30,7 +30,7 @@ const getStepperCircleStyleByStatus = (status) => css`
 
 export const Container = styled.div`
   display: grid;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   margin-top: 26px;
   width: 100%;
 `;

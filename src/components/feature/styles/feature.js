@@ -29,7 +29,7 @@ export const Title = styled.h2`
 `;
 
 export const TitleAlt = styled.p`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 400;
   margin-top: 20px;
   line-height: 19px;
@@ -74,7 +74,7 @@ export const Img = styled.img`
 `;
 
 export const TitleSmall = styled.h3`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 31px;
@@ -88,7 +88,7 @@ export const TitleSmall = styled.h3`
 
 export const Text = styled.p`
   color: ${colors.gray8};
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 18px;

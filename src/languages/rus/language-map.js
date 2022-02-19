@@ -24,15 +24,15 @@ const HeroSection = {
 
   hero_presentation_title2: "Как отправить груз?",
   hero_presentation_text2: "Детали отправки",
-  hero_presentation_content2_title1: "Упаковка",
   hero_presentation_content2_text1:
-    "Измерьте свой груз для отправки и выберите грузовую компанию",
-  hero_presentation_content2_title2: "Подготовка",
+      "Когда ваш груз находится в пути, вы можете отследить его по предоставленному трек номеру.",
+  hero_presentation_content2_title2: "Упаковка",
   hero_presentation_content2_text2:
-    "Курьер принимает ваш груз по вашему адресу в тот же день, упаковывает его и готовит к отправке.",
-  hero_presentation_content2_title3: "Отправка и отслеживание",
+    "Измерьте свой груз для отправки и выберите грузовую компанию",
+  hero_presentation_content2_title3: "Подготовка",
   hero_presentation_content2_text3:
-    "Когда ваш груз находится в пути, вы можете отследить его по предоставленному трек номеру.",
+    "Курьер принимает ваш груз по вашему адресу в тот же день, упаковывает его и готовит к отправке.",
+  hero_presentation_content2_title1: "Отправка и отслеживание",
 };
 
 const HomeFAQ = {
@@ -44,9 +44,17 @@ const HomeFAQ = {
   home_faq_tab1_question1: "Как отправить груз?",
   home_faq_tab1_question2: "Как я могу отследить свой груз?",
   home_faq_tab1_question3: "За сколько дней будет доставлено?",
-  home_faq_tab1_question4: "На что следует обратить внимание?",
   home_faq_tab1_question5: "Как производится оплата?",
+  //home_faq_tab1_question4: "На что следует обратить внимание?",
 };
+
+const HomeFAQAnswers = {
+  home_faq_tab1_answer1: "Соберите свой груз и выберите подходящую вам компанию на сайте. Выбрав компанию, вы можете нажать на кнопку «Вызвать курьера» и заполнить необходимую информацию, а затем вызвать курьера.",
+  home_faq_tab1_answer2: "Когда вы выберете компанию на сайте и создадите заказ, система выдаст вам номер для отслеживания. Вы можете отслеживать свой груз, введя полученный номер для отслеживания, или можете увидеть его по последним отправленным вами отправлениям на  вашем профиле.",
+  home_faq_tab1_answer3: "Груз, которую вы отправляете, доставляется в среднем за 10-15 дней.",
+  home_faq_tab1_answer4: "Вы можете произвести оплату, когда курьер прибудет на ваш адрес. В будущем вы сможете произвести оплату онлайн.",
+  home_faq_tab1_answer5: "",
+}
 
 const Blog = {
   blog_title: "Блог",
@@ -73,7 +81,7 @@ const ProductCard = {
   new_companies: "Новые компании",
   product_card_delivery: "Доставка",
   product_card_kg_price: "Цена за кг",
-  product_card_minimum: "Минимальный вес",
+  product_card_minimum: "Мин",
 };
 
 export const Header = {
@@ -84,7 +92,7 @@ export const Header = {
 };
 
 export const Footer = {
-  footer_copyright: "Все права защищены © 2021",
+  footer_copyright: "Все права защищены © ",
   footer_link_title1: "Фирма",
   footer_link_title2: "Общее",
   footer_link_about: "О нас",
@@ -354,5 +362,6 @@ export const Shared = {
 export const HomePage = {
   ...HeroSection,
   ...HomeFAQ,
+  ...HomeFAQAnswers,
   ...Blog,
 };

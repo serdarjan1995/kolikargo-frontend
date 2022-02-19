@@ -1,6 +1,14 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { FooterContainer, HeaderContainer, LoaderContainer, ModalContainer } from "./containers";
+import {
+  AddAddressContainer,
+  AddressesContainer,
+  FooterContainer,
+  HeaderContainer,
+  LoaderContainer,
+  ModalContainer, MyCargosContainer,
+  SettingsContainer
+} from "./containers";
 import * as ROUTES from "./constants/routes";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import { ScrollToTopOnRouteChange } from "./helpers";
@@ -32,8 +40,24 @@ function AppRoute() {
 
             <Route path={`${ROUTES.COMPANY}/:company`} exact element={<Company />}/>
             <Route path={ROUTES.CONFIRMATION} exact element={<ProtectedRoute><Confirmation /></ProtectedRoute>}/>
-            <Route path={ROUTES.PROFILE} exact element={<ProtectedRoute><Profile /></ProtectedRoute>}/>
-            <Route path={`${ROUTES.TRACK_CARGO}/:order`} exact element={<ProtectedRoute><TrackCargo /></ProtectedRoute>}/>
+
+            {/*<Route path={ROUTES.PROFILE} exact element={<ProtectedRoute><Profile /></ProtectedRoute>}/>*/}
+            <Route path={`${ROUTES.PROFILE}${ROUTES.SETTINGS}`} exact element={
+              <ProtectedRoute><Profile><SettingsContainer /></Profile></ProtectedRoute>
+            }/>
+            <Route path={`${ROUTES.PROFILE}${ROUTES.MY_ADDRESSES}`} exact element={
+              <ProtectedRoute><Profile><AddressesContainer /></Profile></ProtectedRoute>
+            }/>
+            <Route path={`${ROUTES.PROFILE}${ROUTES.ADD_ADDRESS}`} exact element={
+              <ProtectedRoute><Profile><AddAddressContainer /></Profile></ProtectedRoute>
+            }/>
+            <Route path={`${ROUTES.PROFILE}${ROUTES.MY_CARGOS}`} exact element={
+              <ProtectedRoute><Profile><MyCargosContainer /></Profile></ProtectedRoute>
+            }/>
+
+            <Route path={`${ROUTES.TRACK_CARGO}/:order`} exact element={
+              <ProtectedRoute><TrackCargo /></ProtectedRoute>
+            }/>
 
             <Route path={ROUTES.FAQ} element={<FAQ />}/>
             <Route path={ROUTES.ABOUT} element={<About />}/>

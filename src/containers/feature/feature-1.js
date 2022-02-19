@@ -9,6 +9,9 @@ import "styled-components/macro";
 
 function FeatureContainer1() {
   const { t } = useTranslation();
+
+  const svgSize = 90;
+
   return (
     <Feature>
       <Flex>
@@ -26,7 +29,7 @@ function FeatureContainer1() {
       <Feature.List>
         <Feature.Item>
           <div>
-            <Feature.Img src={Advantage1IMG} alt="" width="175" height="175" />
+            <Feature.Img src={Advantage1IMG} alt="" width={svgSize} height={svgSize} />
           </div>
           <Feature.TitleSmall>
             {t(lnMap.hero_presentation_content1_title1)}
@@ -37,7 +40,7 @@ function FeatureContainer1() {
         </Feature.Item>
         <Feature.Item>
           <div>
-            <Feature.Img src={Advantage2IMG} alt="" width="145" height="145"/>
+            <Feature.Img src={Advantage2IMG} alt="" width={svgSize} height={svgSize}/>
           </div>
           <Feature.TitleSmall>
             {t(lnMap.hero_presentation_content1_title2)}
@@ -48,7 +51,7 @@ function FeatureContainer1() {
         </Feature.Item>
         <Feature.Item>
           <div>
-            <Feature.Img src={Advantage3IMG} alt=""  width="198" height="139" />
+            <Feature.Img src={Advantage3IMG} alt=""  width={svgSize} height={svgSize} />
           </div>
           <Feature.TitleSmall>
             {t(lnMap.hero_presentation_content1_title3)}

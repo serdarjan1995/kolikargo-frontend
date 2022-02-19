@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const ContentWrapper = styled.div`
   align-items: center;
   color: black;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   display: flex;
   flex-direction: column;
   text-align: center;

@@ -12,6 +12,7 @@ import {
 } from "../../components/icons";
 import { useCargoPickerLogic } from "../../hooks";
 import lnMap from "../../languages/language-maps/home-lang-map";
+import "./styles.css"
 
 function CargoPickerContainer() {
   const { t } = useTranslation();
@@ -84,22 +85,25 @@ function CargoPickerContainer() {
                       type="number"
                       name="weight"
                       placeholder={t(lnMap.hero_card_section_title3)}
+                      className="search-padding"
                     />
                     <CargoPicker.Text>
                       {t(lnMap.hero_card_section_text3)}
                     </CargoPicker.Text>
                   </CargoPicker.ContentInnerWrapper>
                 </CargoPicker.ContentWrapper>
-                <CargoPicker.ButtonShowResults>
-                  <div
-                    css={`
-                      margin-right: 12px;
-                    `}
-                  >
-                    <SearchIcon />
-                  </div>
-                  <p>{t(lnMap.hero_card_btn)}</p>
-                </CargoPicker.ButtonShowResults>
+                <CargoPicker.ContentWrapper>
+                  <CargoPicker.ButtonShowResults>
+                    <div
+                      css={`
+                        margin-right: 12px;
+                      `}
+                    >
+                      <SearchIcon />
+                    </div>
+                    <p>{t(lnMap.hero_card_btn)}</p>
+                  </CargoPicker.ButtonShowResults>
+                </CargoPicker.ContentWrapper>
                 {/*<CargoPicker.Button>*/}
                 {/*  <div*/}
                 {/*    css={`*/}

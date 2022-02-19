@@ -59,7 +59,7 @@ export const Info = styled.p`
 `;
 
 export const PriceTitle = styled.h2`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 32px;

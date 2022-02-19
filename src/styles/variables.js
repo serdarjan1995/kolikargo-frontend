@@ -26,6 +26,7 @@ export const colors = {
 export const fonts = {
   dmSans: "'DM Sans', sans-serif",
   gilroy: "'Gilroy', sans-serif",
+  BaiJamjuree: "'BaiJamjuree', sans-serif",
   poppins: "'Poppins', sans-serif",
 };
 
@@ -33,9 +34,9 @@ export const fontSizes = {
   xl: "2.4rem",
   lg2: "2.2rem",
   lg: "2.2rem",
-  md: "1.6rem",
-  sm: "1.4rem",
-  xs: "1.2rem",
+  md: "1.8rem",
+  sm: "1.7rem",
+  xs: "1.6rem",
 };
 
 export const sizes = {

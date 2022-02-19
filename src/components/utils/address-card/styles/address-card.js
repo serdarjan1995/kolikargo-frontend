@@ -6,7 +6,7 @@ export const Container = styled.div`
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   padding: 24px 19px;
 
   @media ${screens.md} {

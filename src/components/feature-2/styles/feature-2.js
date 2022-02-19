@@ -22,11 +22,11 @@ export const Container = styled.div`
 `;
 
 export const Background = styled.div`
-  background: #fcfcfd;
+  background: #F5F5F5;
   margin-top: 37px;
 
   @media ${screens.lg} {
-    margin-top: 129px;
+    margin-top: 20px;
   }
 `;
 
@@ -39,7 +39,7 @@ export const Title = styled.h2`
 `;
 
 export const TitleAlt = styled.p`
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   line-height: 32px;
   letter-spacing: -0.01em;
   margin-top: 4px;

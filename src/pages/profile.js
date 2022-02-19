@@ -2,18 +2,9 @@ import React from "react";
 import { Flex } from "../components";
 import CargosMenuContainer from "../containers/utils/cargos-menu";
 import "styled-components/macro";
-import {
-  AddAddressContainer,
-  AddressesContainer,
-  MyCargosContainer,
-  SettingsContainer,
-} from "../containers";
 import { screens } from "../styles/variables";
-import { Route, useMatch } from "react-router";
-import * as ROUTES from "../constants/routes";
 
-function Profile() {
-  const { path } = useMatch();
+function Profile({children}) {
 
   return (
     <div
@@ -55,18 +46,7 @@ function Profile() {
             }
           `}
         >
-          <Route path={`${path}${ROUTES.SETTINGS}`}>
-            <SettingsContainer />
-          </Route>
-          <Route path={`${path}${ROUTES.MY_ADDRESSES}`}>
-            <AddressesContainer />
-          </Route>
-          <Route path={`${path}${ROUTES.ADD_ADDRESS}`}>
-            <AddAddressContainer />
-          </Route>
-          <Route path={`${path}${ROUTES.MY_CARGOS}`}>
-            <MyCargosContainer />
-          </Route>
+          {children}
         </Flex>
       </Flex>
     </div>

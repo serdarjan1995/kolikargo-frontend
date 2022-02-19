@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   border: 1px solid rgba(230, 232, 236, 1);
   border-radius: 15px;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   display: flex;
   margin-top: 34px;
   padding: 17px 21px 18px 19px;

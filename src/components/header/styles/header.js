@@ -31,7 +31,7 @@ export const LogoContainer = styled.div``;
 
 export const Logo = styled.img`
   font-size: 2rem;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 700;
   margin: 0;
 
@@ -56,7 +56,7 @@ export const Searchbox = styled.input`
   align-items: center;
   background: transparent;
   display: flex;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-size: 1.5rem;
   font-weight: 400;
   height: ${sizes.headerSearchbox};
@@ -81,7 +81,7 @@ export const ButtonLink = styled.button`
   border-radius: ${radius.roundedMD};
   border: 2px solid ${colors.gray4};
   color: black;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 600;
   padding: 14px 35px;
   outline: none;
@@ -101,7 +101,7 @@ export const LoginButton = styled.button`
   border-radius: ${radius.roundedMD};
   border: 2px solid #00A857;
   color: #00A857;
-  font-family: ${fonts.gilroy};
+  font-family: ${fonts.BaiJamjuree};
   font-weight: 600;
   padding: 14px 35px;
   outline: none;
